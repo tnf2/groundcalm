@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBT Skills — Distress Tolerance, Emotional Regulation & More | Ground Calm</title>
+  <meta name="description" content="Learn DBT skills including distress tolerance, emotional regulation, opposite action, and TIPP. Evidence-based techniques from Dialectical Behavior Therapy.">
+  <meta name="keywords" content="DBT skills, distress tolerance skills, opposite action DBT, emotional regulation, TIPP skills, dialectical behavior therapy, DBT techniques">
+  <link rel="canonical" href="https://groundcalm.com/dbt/">
+  
+  <meta property="og:title" content="DBT Skills — Evidence-Based Emotional Regulation">
+  <meta property="og:description" content="Learn DBT skills including distress tolerance, emotional regulation, and opposite action.">
+  <meta property="og:url" content="https://groundcalm.com/dbt/">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "DBT Skills",
+    "description": "Evidence-based skills from Dialectical Behavior Therapy",
+    "url": "https://groundcalm.com/dbt/"
+  }
+  </script>
+  
+  <style>
+    :root {
+      --lavender: #b8a9d4;
+      --lavender-light: #d4c9e8;
+      --lavender-dark: #8b7ab3;
+      --sage: #7eb8a2;
+      --cream: #faf8f5;
+      --text: #3d4852;
+      --text-light: #6b7280;
+      --text-dark: #1f2937;
+      --shadow: rgba(62, 72, 82, 0.08);
+      --radius: 20px;
+      --radius-sm: 12px;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    
+    h1, h2, h3, h4 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+    
+    a { color: inherit; text-decoration: none; }
+    
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 1rem 2rem;
+      background: rgba(250, 248, 245, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .logo {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--sage);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--sage), #a8d4c4);
+      border-radius: 10px;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    
+    .nav-links a { font-weight: 600; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--lavender-dark); }
+    
+    .page-header {
+      background: linear-gradient(135deg, var(--lavender-light) 0%, var(--lavender) 100%);
+      padding: 6rem 2rem 4rem;
+      text-align: center;
+      color: white;
+    }
+    
+    .breadcrumb { font-size: 0.9rem; opacity: 0.9; margin-bottom: 1rem; }
+    .page-header h1 { font-size: clamp(2rem, 5vw, 3rem); color: white; margin-bottom: 1rem; }
+    .page-header p { font-size: 1.15rem; max-width: 600px; margin: 0 auto; opacity: 0.95; }
+    
+    main { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+    
+    .intro-section {
+      background: white;
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 4px 30px var(--shadow);
+    }
+    
+    .intro-section h2 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--lavender-dark); }
+    .intro-section p { margin-bottom: 1rem; }
+    
+    .dbt-modules {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .module-card {
+      background: var(--cream);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      text-align: center;
+      border: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    
+    .module-card:hover { border-color: var(--lavender); }
+    .module-card .emoji { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .module-card h4 { font-size: 1rem; margin-bottom: 0.25rem; }
+    .module-card p { font-size: 0.8rem; color: var(--text-light); }
+    
+    .section-title {
+      font-size: 1.3rem;
+      margin: 2.5rem 0 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .techniques-list { display: grid; gap: 1.25rem; }
+    
+    .technique-item {
+      background: white;
+      border-radius: var(--radius-sm);
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      box-shadow: 0 2px 20px var(--shadow);
+      transition: all 0.3s;
+      border-left: 4px solid transparent;
+    }
+    
+    .technique-item:hover {
+      transform: translateX(8px);
+      border-left-color: var(--lavender);
+      box-shadow: 0 4px 30px var(--shadow);
+    }
+    
+    .technique-emoji { font-size: 2.5rem; flex-shrink: 0; }
+    .technique-content { flex: 1; }
+    .technique-content h3 { font-size: 1.2rem; margin-bottom: 0.25rem; }
+    .technique-content p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 0.5rem; }
+    
+    .technique-meta { display: flex; gap: 1rem; font-size: 0.8rem; }
+    .technique-meta span { display: flex; align-items: center; gap: 0.25rem; color: var(--lavender-dark); font-weight: 600; }
+    
+    .technique-arrow { color: var(--lavender); font-size: 1.5rem; opacity: 0; transition: opacity 0.2s; }
+    .technique-item:hover .technique-arrow { opacity: 1; }
+    
+    .acronym-box {
+      background: white;
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 4px 30px var(--shadow);
+    }
+    
+    .acronym-box h3 { color: var(--lavender-dark); margin-bottom: 1rem; }
+    
+    .acronym-list {
+      display: grid;
+      gap: 0.75rem;
+    }
+    
+    .acronym-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem;
+      background: var(--cream);
+      border-radius: var(--radius-sm);
+    }
+    
+    .acronym-letter {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--lavender-light), var(--lavender));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: white;
+    }
+    
+    footer {
+      background: var(--text-dark);
+      color: rgba(255,255,255,0.7);
+      padding: 2rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+    
+    footer a { color: var(--lavender-light); }
+    
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .technique-item { flex-direction: column; text-align: center; gap: 1rem; }
+      .technique-arrow { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🌿</span>
+        Ground Calm
+      </a>
+      <ul class="nav-links">
+        <li><a href="/grounding/">Grounding</a></li>
+        <li><a href="/breathing/">Breathing</a></li>
+        <li><a href="/dbt/" class="active">DBT Skills</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header class="page-header">
+    <div class="breadcrumb">
+      <a href="/">Home</a> → DBT Skills
+    </div>
+    <h1>DBT Skills</h1>
+    <p>Evidence-based techniques from Dialectical Behavior Therapy to manage intense emotions and build a life worth living.</p>
+  </header>
+  
+  <main>
+    <section class="intro-section">
+      <h2>What is DBT?</h2>
+      <p>Dialectical Behavior Therapy (DBT) was developed by Dr. Marsha Linehan and is one of the most effective treatments for emotional dysregulation, borderline personality disorder, and chronic suicidal thoughts. But you don't need a diagnosis to benefit from DBT skills — they work for anyone who struggles with intense emotions.</p>
+      
+      <p><strong>DBT has four main modules:</strong></p>
+      
+      <div class="dbt-modules">
+        <div class="module-card">
+          <div class="emoji">🔥</div>
+          <h4>Distress Tolerance</h4>
+          <p>Survive crisis moments without making things worse</p>
+        </div>
+        <div class="module-card">
+          <div class="emoji">🎭</div>
+          <h4>Emotional Regulation</h4>
+          <p>Understand and manage intense emotions</p>
+        </div>
+        <div class="module-card">
+          <div class="emoji">💬</div>
+          <h4>Interpersonal Effectiveness</h4>
+          <p>Navigate relationships while respecting yourself</p>
+        </div>
+        <div class="module-card">
+          <div class="emoji">🧘</div>
+          <h4>Mindfulness</h4>
+          <p>Stay present and observe without judgment</p>
+        </div>
+      </div>
+    </section>
+    
+    <h2 class="section-title">🔥 Distress Tolerance Skills</h2>
+    <p style="color: var(--text-light); margin-bottom: 1.5rem;">For when emotions are overwhelming and you need to get through a crisis without making things worse.</p>
+    
+    <div class="techniques-list">
+      <a href="/dbt/tipp/" class="technique-item">
+        <span class="technique-emoji">🧊</span>
+        <div class="technique-content">
+          <h3>TIPP Skills</h3>
+          <p>Temperature, Intense exercise, Paced breathing, Paired muscle relaxation — change your body chemistry fast.</p>
+          <div class="technique-meta">
+            <span>⏱️ 1-5 min</span>
+            <span>🎯 Crisis, Intense Emotions</span>
+          </div>
+        </div>
+        <span class="technique-arrow">→</span>
+      </a>
+      
+      <a href="/dbt/distract-accepts/" class="technique-item">
+        <span class="technique-emoji">🎯</span>
+        <div class="technique-content">
+          <h3>ACCEPTS (Distraction)</h3>
+          <p>Activities, Contributing, Comparisons, Emotions, Pushing away, Thoughts, Sensations — healthy distraction.</p>
+          <div class="technique-meta">
+            <span>⏱️ varies</span>
+            <span>🎯 Urges, Cravings</span>
+          </div>
+        </div>
+        <span class="technique-arrow">→</span>
+      </a>
+      
+      <a href="/dbt/self-soothe/" class="technique-item">
+        <span class="technique-emoji">🕯️</span>
+        <div class="technique-content">
+          <h3>Self-Soothe with Five Senses</h3>
+          <p>Use each of your five senses to comfort yourself during difficult moments.</p>
+          <div class="technique-meta">
+            <span>⏱️ 5-15 min</span>
+            <span>🎯 Comfort, Self-Care</span>
+          </div>
+        </div>
+        <span class="technique-arrow">→</span>
+      </a>
+    </div>
+    
+    <div class="acronym-box">
+      <h3>🧊 TIPP — Change Your Body Chemistry</h3>
+      <div class="acronym-list">
+        <div class="acronym-item">
+          <span class="acronym-letter">T</span>
+          <div><strong>Temperature:</strong> Cold water on face triggers dive reflex, slows heart rate</div>
+        </div>
+        <div class="acronym-item">
+          <span class="acronym-letter">I</span>
+          <div><strong>Intense Exercise:</strong> 10-20 min of cardio burns off adrenaline</div>
+        </div>
+        <div class="acronym-item">
+          <span class="acronym-letter">P</span>
+          <div><strong>Paced Breathing:</strong> Slow exhales activate parasympathetic system</div>
+        </div>
+        <div class="acronym-item">
+          <span class="acronym-letter">P</span>
+          <div><strong>Paired Muscle Relaxation:</strong> Tense then release muscle groups</div>
+        </div>
+      </div>
+    </div>
+    
+    <h2 class="section-title">🎭 Emotional Regulation Skills</h2>
+    <p style="color: var(--text-light); margin-bottom: 1.5rem;">For understanding, reducing vulnerability to, and changing unwanted emotions.</p>
+    
+    <div class="techniques-list">
+      <a href="/dbt/opposite-action/" class="technique-item">
+        <span class="technique-emoji">🔄</span>
+        <div class="technique-content">
+          <h3>Opposite Action</h3>
+          <p>When your emotion doesn't fit the facts or acting on it is harmful, do the opposite of what the emotion urges.</p>
+          <div class="technique-meta">
+            <span>⏱️ varies</span>
+            <span>🎯 All Emotions</span>
+          </div>
+        </div>
+        <span class="technique-arrow">→</span>
+      </a>
+      
+      <a href="/dbt/check-the-facts/" class="technique-item">
+        <span class="technique-emoji">🔍</span>
+        <div class="technique-content">
+          <h3>Check the Facts</h3>
+          <p>Challenge your interpretation of events. Is your emotional response based on facts or assumptions?</p>
+          <div class="technique-meta">
+            <span>⏱️ 5-10 min</span>
+            <span>🎯 Anxiety, Anger, Shame</span>
+          </div>
+        </div>
+        <span class="technique-arrow">→</span>
+      </a>
+      
+      <a href="/dbt/please/" class="technique-item">
+        <span class="technique-emoji">💪</span>
+        <div class="technique-content">
+          <h3>PLEASE Skills</h3>
+          <p>Reduce emotional vulnerability by treating Physical illness, balanced Eating, avoiding Altering substances, Sleep, and Exercise.</p>
+          <div class="technique-meta">
+            <span>⏱️ ongoing</span>
+            <span>🎯 Prevention</span>
+          </div>
+        </div>
+        <span class="technique-arrow">→</span>
+      </a>
+    </div>
+    
+    <h2 class="section-title">💬 Interpersonal Effectiveness</h2>
+    <p style="color: var(--text-light); margin-bottom: 1.5rem;">For asking for what you need, saying no, and maintaining relationships while keeping self-respect.</p>
+    
+    <div class="techniques-list">
+      <a href="/dbt/dear-man/" class="technique-item">
+        <span class="technique-emoji">🗣️</span>
+        <div class="technique-content">
+          <h3>DEAR MAN</h3>
+          <p>Describe, Express, Assert, Reinforce, stay Mindful, Appear confident, Negotiate — get what you want effectively.</p>
+          <div class="technique-meta">
+            <span>⏱️ varies</span>
+            <span>🎯 Asking, Boundaries</span>
+          </div>
+        </div>
+        <span class="technique-arrow">→</span>
+      </a>
+      
+      <a href="/dbt/give/" class="technique-item">
+        <span class="technique-emoji">🤝</span>
+        <div class="technique-content">
+          <h3>GIVE Skills</h3>
+          <p>Gentle, Interested, Validate, Easy manner — maintain the relationship while making requests.</p>
+          <div class="technique-meta">
+            <span>⏱️ varies</span>
+            <span>🎯 Relationships</span>
+          </div>
+        </div>
+        <span class="technique-arrow">→</span>
+      </a>
+    </div>
+  </main>
+  
+  <footer>
+    <p>© 2026 Ground Calm. Made with 💚</p>
+    <p><small>Not a substitute for professional mental health care. DBT is most effective when learned with a trained therapist.</small></p>
+  </footer>
+</body>
+</html>

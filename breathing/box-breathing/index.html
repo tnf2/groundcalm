@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Breathing Technique — Navy SEAL 4-4-4-4 Method | Grounded Calm</title>
+  <meta name="description" content="Learn box breathing (4-4-4-4), the technique used by Navy SEALs to stay calm under pressure. Step-by-step guide with timer and tips for anxiety, stress, and focus.">
+  <meta name="keywords" content="box breathing, box breathing technique, 4-4-4-4 breathing, Navy SEAL breathing, tactical breathing, breathing for anxiety, breathing for stress">
+  <link rel="canonical" href="https://groundedcalm.com/breathing/box-breathing/">
+  
+  <meta property="og:title" content="Box Breathing — The Navy SEAL Calm Technique">
+  <meta property="og:description" content="Learn box breathing, the technique used by Navy SEALs to stay calm under pressure.">
+  <meta property="og:url" content="https://groundedcalm.com/breathing/box-breathing/">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Box Breathing Technique",
+    "description": "A breathing technique that uses equal counts of 4 for inhaling, holding, exhaling, and holding to calm the nervous system.",
+    "totalTime": "PT4M",
+    "step": [
+      {"@type": "HowToStep", "position": 1, "name": "Inhale", "text": "Breathe in slowly through your nose for 4 counts"},
+      {"@type": "HowToStep", "position": 2, "name": "Hold", "text": "Hold your breath for 4 counts"},
+      {"@type": "HowToStep", "position": 3, "name": "Exhale", "text": "Exhale slowly through your mouth for 4 counts"},
+      {"@type": "HowToStep", "position": 4, "name": "Hold", "text": "Hold empty for 4 counts, then repeat"}
+    ]
+  }
+  </script>
+  
+  <style>
+    :root {
+      --sky: #89c4e8;
+      --sky-light: #b5dcf4;
+      --sky-dark: #5a9fc7;
+      --sage: #7eb8a2;
+      --cream: #faf8f5;
+      --text: #3d4852;
+      --text-light: #6b7280;
+      --text-dark: #1f2937;
+      --shadow: rgba(62, 72, 82, 0.08);
+      --radius: 20px;
+      --radius-sm: 12px;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Nunito', sans-serif; background: var(--cream); color: var(--text); line-height: 1.8; }
+    h1, h2, h3, h4 { font-family: 'Quicksand', sans-serif; font-weight: 700; color: var(--text-dark); line-height: 1.3; }
+    a { color: var(--sky-dark); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    
+    nav { position: sticky; top: 0; z-index: 100; padding: 1rem 2rem; background: rgba(250, 248, 245, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-family: 'Quicksand', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--sage); display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+    .logo-icon { width: 32px; height: 32px; background: linear-gradient(135deg, var(--sage), #a8d4c4); border-radius: 10px; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-weight: 600; color: var(--text); text-decoration: none; }
+    .nav-links a:hover { color: var(--sky-dark); }
+    
+    .page-header { background: linear-gradient(135deg, var(--sky-light), var(--sky)); padding: 5rem 2rem 3rem; text-align: center; color: white; }
+    .breadcrumb { font-size: 0.9rem; opacity: 0.9; margin-bottom: 1rem; }
+    .breadcrumb a { color: white; }
+    .page-header h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); color: white; margin-bottom: 0.5rem; }
+    .page-header .subtitle { font-size: 1.1rem; opacity: 0.95; }
+    .meta-bar { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; font-size: 0.9rem; flex-wrap: wrap; }
+    .meta-bar span { display: flex; align-items: center; gap: 0.3rem; }
+    
+    main { max-width: 800px; margin: 0 auto; padding: 3rem 2rem; }
+    
+    .content-card { background: white; border-radius: var(--radius); padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 4px 30px var(--shadow); }
+    .content-card h2 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--sky-dark); }
+    .content-card p { margin-bottom: 1rem; }
+    .content-card ul, .content-card ol { margin: 1rem 0 1rem 1.5rem; }
+    .content-card li { margin-bottom: 0.5rem; }
+    
+    /* Box Animation */
+    .box-demo {
+      background: white;
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 30px var(--shadow);
+      text-align: center;
+    }
+    
+    .box-container {
+      width: 200px;
+      height: 200px;
+      margin: 2rem auto;
+      position: relative;
+    }
+    
+    .box-visual {
+      width: 100%;
+      height: 100%;
+      border: 4px solid var(--sky);
+      border-radius: 16px;
+      position: relative;
+    }
+    
+    .box-dot {
+      width: 20px;
+      height: 20px;
+      background: var(--sky-dark);
+      border-radius: 50%;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      animation: boxPath 16s infinite linear;
+    }
+    
+    @keyframes boxPath {
+      0% { top: -10px; left: -10px; }
+      25% { top: -10px; left: calc(100% - 10px); }
+      50% { top: calc(100% - 10px); left: calc(100% - 10px); }
+      75% { top: calc(100% - 10px); left: -10px; }
+      100% { top: -10px; left: -10px; }
+    }
+    
+    .box-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+      font-weight: 600;
+      color: var(--sky-dark);
+    }
+    
+    .phase-indicator {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--sky-dark);
+      margin-top: 1rem;
+    }
+    
+    .step-guide { counter-reset: step; }
+    
+    .step {
+      background: white;
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 30px var(--shadow);
+      position: relative;
+      padding-left: 5rem;
+    }
+    
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 1.5rem;
+      top: 1.5rem;
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, var(--sky-light), var(--sky));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: white;
+    }
+    
+    .step h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+    .step p { margin-bottom: 0.5rem; }
+    
+    .count-visual {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    
+    .count-dot {
+      width: 40px;
+      height: 40px;
+      background: var(--sky-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--sky-dark);
+    }
+    
+    .tip-box {
+      background: linear-gradient(135deg, #e8f4fc, #d4ebf7);
+      border-left: 4px solid var(--sky);
+      border-radius: var(--radius-sm);
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .tip-box h4 { color: var(--sky-dark); margin-bottom: 0.5rem; }
+    
+    .science-box {
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .science-box h3 { color: var(--sky-dark); margin-bottom: 1rem; }
+    
+    .variations-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .variation-card {
+      background: var(--cream);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      text-align: center;
+      border: 2px solid transparent;
+      transition: border-color 0.2s;
+    }
+    
+    .variation-card:hover { border-color: var(--sky); }
+    .variation-card strong { display: block; margin-bottom: 0.25rem; color: var(--sky-dark); }
+    .variation-card span { font-size: 0.9rem; color: var(--text-light); }
+    
+    footer { background: var(--text-dark); color: rgba(255,255,255,0.7); padding: 2rem; text-align: center; margin-top: 3rem; }
+    footer a { color: var(--sky-light); }
+    
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .step { padding-left: 2rem; padding-top: 4rem; }
+      .step::before { left: 50%; transform: translateX(-50%); top: 1rem; width: 40px; height: 40px; font-size: 1.2rem; }
+      .meta-bar { flex-direction: column; gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🌿</span>
+        Grounded Calm
+      </a>
+      <ul class="nav-links">
+        <li><a href="/grounding/">Grounding</a></li>
+        <li><a href="/breathing/">Breathing</a></li>
+        <li><a href="/dbt/">DBT Skills</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header class="page-header">
+    <div class="breadcrumb">
+      <a href="/">Home</a> → <a href="/breathing/">Breathing</a> → Box Breathing
+    </div>
+    <h1>📦 Box Breathing</h1>
+    <p class="subtitle">The Navy SEAL technique for instant calm under pressure</p>
+    <div class="meta-bar">
+      <span>⏱️ 2-5 minutes</span>
+      <span>🎯 Stress, Anxiety, Focus</span>
+      <span>📍 Anywhere, anytime</span>
+    </div>
+  </header>
+  
+  <main>
+    <div class="content-card">
+      <h2>What is Box Breathing?</h2>
+      <p>Box breathing (also called square breathing or tactical breathing) is a powerful stress-relief technique used by <strong>Navy SEALs</strong>, first responders, and athletes to stay calm under extreme pressure.</p>
+      <p>The technique is simple: breathe in a "box" pattern — <strong>4 counts in, 4 counts hold, 4 counts out, 4 counts hold</strong> — creating four equal sides like a square.</p>
+      <p>It's called "tactical breathing" because it can be used in high-stress situations to regain control of your nervous system within minutes.</p>
+    </div>
+    
+    <div class="box-demo">
+      <h2 style="color: var(--sky-dark); margin-bottom: 1rem;">Watch the Pattern</h2>
+      <p>Follow the dot around the box. Each side = 4 counts.</p>
+      <div class="box-container">
+        <div class="box-visual">
+          <div class="box-dot"></div>
+        </div>
+      </div>
+      <div class="box-labels">
+        <span>← Hold</span>
+        <span>Inhale ↑</span>
+        <span>Hold →</span>
+        <span>↓ Exhale</span>
+      </div>
+    </div>
+    
+    <h2 style="text-align: center; margin: 2.5rem 0 1.5rem;">How to Do It</h2>
+    
+    <div class="step-guide">
+      <div class="step">
+        <h3>Inhale for 4 Counts</h3>
+        <p>Slowly breathe in through your nose, filling your lungs completely. Count slowly: 1... 2... 3... 4...</p>
+        <div class="count-visual">
+          <span class="count-dot">1</span>
+          <span class="count-dot">2</span>
+          <span class="count-dot">3</span>
+          <span class="count-dot">4</span>
+        </div>
+      </div>
+      
+      <div class="step">
+        <h3>Hold for 4 Counts</h3>
+        <p>Hold your breath with your lungs full. Don't clench — just pause. 1... 2... 3... 4...</p>
+        <div class="count-visual">
+          <span class="count-dot">1</span>
+          <span class="count-dot">2</span>
+          <span class="count-dot">3</span>
+          <span class="count-dot">4</span>
+        </div>
+      </div>
+      
+      <div class="step">
+        <h3>Exhale for 4 Counts</h3>
+        <p>Slowly release your breath through your mouth (or nose). Empty your lungs completely. 1... 2... 3... 4...</p>
+        <div class="count-visual">
+          <span class="count-dot">1</span>
+          <span class="count-dot">2</span>
+          <span class="count-dot">3</span>
+          <span class="count-dot">4</span>
+        </div>
+      </div>
+      
+      <div class="step">
+        <h3>Hold for 4 Counts</h3>
+        <p>With your lungs empty, pause before the next breath. 1... 2... 3... 4... Then start again.</p>
+        <div class="count-visual">
+          <span class="count-dot">1</span>
+          <span class="count-dot">2</span>
+          <span class="count-dot">3</span>
+          <span class="count-dot">4</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="tip-box">
+      <h4>💡 Tips for Best Results</h4>
+      <ul>
+        <li><strong>Start with 3-3-3-3</strong> if 4 counts feels too long</li>
+        <li><strong>Breathe into your belly</strong>, not your chest (diaphragmatic breathing)</li>
+        <li><strong>Do 4-6 cycles</strong> for a quick reset, or up to 5 minutes for deeper calm</li>
+        <li><strong>Practice daily</strong> so it becomes automatic when you need it</li>
+        <li><strong>Use before</strong> stressful events (presentations, difficult conversations, exams)</li>
+      </ul>
+    </div>
+    
+    <div class="science-box">
+      <h3>🔬 Why It Works</h3>
+      <p>Box breathing activates your <strong>parasympathetic nervous system</strong> — the "rest and digest" mode that counteracts stress:</p>
+      <ul>
+        <li><strong>The long exhale</strong> stimulates your vagus nerve, which slows your heart rate</li>
+        <li><strong>The holds</strong> increase CO2 tolerance and reset your breathing pattern</li>
+        <li><strong>The counting</strong> occupies your mind, interrupting anxious thoughts</li>
+        <li><strong>The rhythm</strong> creates a feedback loop that tells your brain "we're safe"</li>
+      </ul>
+      <p>Research shows box breathing can lower cortisol (stress hormone) levels in just a few minutes.</p>
+    </div>
+    
+    <div class="content-card">
+      <h2>Variations</h2>
+      <p>Once you master 4-4-4-4, try these variations:</p>
+      <div class="variations-grid">
+        <div class="variation-card">
+          <strong>Beginner</strong>
+          <span>3-3-3-3</span>
+        </div>
+        <div class="variation-card">
+          <strong>Standard</strong>
+          <span>4-4-4-4</span>
+        </div>
+        <div class="variation-card">
+          <strong>Extended</strong>
+          <span>5-5-5-5</span>
+        </div>
+        <div class="variation-card">
+          <strong>Advanced</strong>
+          <span>6-6-6-6</span>
+        </div>
+      </div>
+      <p><strong>Pro tip:</strong> If the holds feel uncomfortable, try <a href="/breathing/478-breathing/">4-7-8 breathing</a> instead, which has no hold after exhale.</p>
+    </div>
+    
+    <div class="content-card">
+      <h2>When to Use Box Breathing</h2>
+      <ul>
+        <li>Before a job interview, presentation, or difficult conversation</li>
+        <li>When you feel anxiety building</li>
+        <li>To refocus during work</li>
+        <li>Before sleep (though <a href="/breathing/478-breathing/">4-7-8</a> may be better)</li>
+        <li>During a stressful commute</li>
+        <li>Between meetings to reset</li>
+        <li>Any time you need to quickly calm down</li>
+      </ul>
+    </div>
+  </main>
+  
+  <footer>
+    <p>© 2026 Grounded Calm. Made with 💚</p>
+    <p><small>Not a substitute for professional mental health care.</small></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4-7-8 Breathing Technique for Sleep & Anxiety | Grounded Calm</title>
+  <meta name="description" content="Learn the 4-7-8 breathing technique, Dr. Andrew Weil's 'natural tranquilizer.' Inhale 4, hold 7, exhale 8. Perfect for falling asleep and calming severe anxiety.">
+  <meta name="keywords" content="4-7-8 breathing, 478 breathing technique, breathing for sleep, natural tranquilizer, Dr Weil breathing, relaxing breath">
+  <link rel="canonical" href="https://groundedcalm.com/breathing/478-breathing/">
+  
+  <meta property="og:title" content="4-7-8 Breathing — The Natural Tranquilizer">
+  <meta property="og:description" content="Learn the 4-7-8 breathing technique for sleep and anxiety relief.">
+  <meta property="og:url" content="https://groundedcalm.com/breathing/478-breathing/">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --sky: #89c4e8;
+      --sky-light: #b5dcf4;
+      --sky-dark: #5a9fc7;
+      --sage: #7eb8a2;
+      --sleep: #6366f1;
+      --sleep-light: #a5b4fc;
+      --cream: #faf8f5;
+      --text: #3d4852;
+      --text-light: #6b7280;
+      --text-dark: #1f2937;
+      --shadow: rgba(62, 72, 82, 0.08);
+      --radius: 20px;
+      --radius-sm: 12px;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Nunito', sans-serif; background: var(--cream); color: var(--text); line-height: 1.8; }
+    h1, h2, h3, h4 { font-family: 'Quicksand', sans-serif; font-weight: 700; color: var(--text-dark); line-height: 1.3; }
+    a { color: var(--sky-dark); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    
+    nav { position: sticky; top: 0; z-index: 100; padding: 1rem 2rem; background: rgba(250, 248, 245, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-family: 'Quicksand', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--sage); display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+    .logo-icon { width: 32px; height: 32px; background: linear-gradient(135deg, var(--sage), #a8d4c4); border-radius: 10px; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-weight: 600; color: var(--text); text-decoration: none; }
+    
+    .page-header { background: linear-gradient(135deg, var(--sleep-light), var(--sleep)); padding: 5rem 2rem 3rem; text-align: center; color: white; }
+    .breadcrumb { font-size: 0.9rem; opacity: 0.9; margin-bottom: 1rem; }
+    .breadcrumb a { color: white; }
+    .page-header h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); color: white; margin-bottom: 0.5rem; }
+    .page-header .subtitle { font-size: 1.1rem; opacity: 0.95; }
+    .meta-bar { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; font-size: 0.9rem; flex-wrap: wrap; }
+    
+    main { max-width: 800px; margin: 0 auto; padding: 3rem 2rem; }
+    
+    .content-card { background: white; border-radius: var(--radius); padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 4px 30px var(--shadow); }
+    .content-card h2 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--sleep); }
+    .content-card p { margin-bottom: 1rem; }
+    .content-card ul { margin: 1rem 0 1rem 1.5rem; }
+    .content-card li { margin-bottom: 0.5rem; }
+    
+    .ratio-visual {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 1rem;
+      margin: 2rem 0;
+      padding: 2rem;
+      background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+      border-radius: var(--radius);
+    }
+    
+    .ratio-bar {
+      width: 60px;
+      background: var(--sleep);
+      border-radius: 8px 8px 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding-bottom: 0.5rem;
+      color: white;
+      font-weight: 700;
+    }
+    
+    .ratio-bar.inhale { height: 80px; }
+    .ratio-bar.hold { height: 140px; }
+    .ratio-bar.exhale { height: 160px; }
+    
+    .ratio-label { margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-light); text-align: center; }
+    
+    .step-guide { counter-reset: step; }
+    
+    .step {
+      background: white;
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 30px var(--shadow);
+      position: relative;
+      padding-left: 5rem;
+    }
+    
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 1.5rem;
+      top: 1.5rem;
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, var(--sleep-light), var(--sleep));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: white;
+    }
+    
+    .step h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--sleep); }
+    
+    .tip-box {
+      background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+      border-left: 4px solid var(--sleep);
+      border-radius: var(--radius-sm);
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .tip-box h4 { color: var(--sleep); margin-bottom: 0.5rem; }
+    
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+    }
+    
+    .comparison-table th, .comparison-table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .comparison-table th { background: var(--cream); font-weight: 700; }
+    
+    footer { background: var(--text-dark); color: rgba(255,255,255,0.7); padding: 2rem; text-align: center; margin-top: 3rem; }
+    footer a { color: var(--sleep-light); }
+    
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .step { padding-left: 2rem; padding-top: 4rem; }
+      .step::before { left: 50%; transform: translateX(-50%); top: 1rem; }
+      .ratio-bar { width: 50px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo"><span class="logo-icon">🌿</span> Grounded Calm</a>
+      <ul class="nav-links">
+        <li><a href="/grounding/">Grounding</a></li>
+        <li><a href="/breathing/">Breathing</a></li>
+        <li><a href="/dbt/">DBT Skills</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header class="page-header">
+    <div class="breadcrumb"><a href="/">Home</a> → <a href="/breathing/">Breathing</a> → 4-7-8</div>
+    <h1>😴 4-7-8 Breathing</h1>
+    <p class="subtitle">The "natural tranquilizer" for sleep and anxiety</p>
+    <div class="meta-bar">
+      <span>⏱️ 2-3 minutes</span>
+      <span>🎯 Sleep, severe anxiety</span>
+      <span>🔬 Dr. Andrew Weil</span>
+    </div>
+  </header>
+  
+  <main>
+    <div class="content-card">
+      <h2>What is 4-7-8 Breathing?</h2>
+      <p>The 4-7-8 breathing technique was developed by Dr. Andrew Weil, based on the ancient yogic practice of pranayama. He calls it a <strong>"natural tranquilizer for the nervous system."</strong></p>
+      <p>The pattern is simple: <strong>inhale for 4 counts, hold for 7, exhale for 8</strong>. The extended exhale is the key — it forces your body into a state of relaxation.</p>
+      <p>With regular practice, this technique becomes more powerful over time. Dr. Weil recommends doing it twice daily for best results.</p>
+    </div>
+    
+    <div class="ratio-visual">
+      <div>
+        <div class="ratio-bar inhale">4</div>
+        <div class="ratio-label">Inhale</div>
+      </div>
+      <div>
+        <div class="ratio-bar hold">7</div>
+        <div class="ratio-label">Hold</div>
+      </div>
+      <div>
+        <div class="ratio-bar exhale">8</div>
+        <div class="ratio-label">Exhale</div>
+      </div>
+    </div>
+    
+    <h2 style="text-align: center; margin: 2rem 0 1.5rem;">How to Do It</h2>
+    
+    <div class="step-guide">
+      <div class="step">
+        <h3>Position Your Tongue</h3>
+        <p>Place the tip of your tongue against the ridge of tissue behind your upper front teeth. Keep it there throughout the exercise.</p>
+      </div>
+      
+      <div class="step">
+        <h3>Exhale Completely</h3>
+        <p>Empty your lungs completely through your mouth, making a "whoosh" sound.</p>
+      </div>
+      
+      <div class="step">
+        <h3>Inhale for 4 Counts</h3>
+        <p>Close your mouth and inhale quietly through your nose. Count to 4 in your head.</p>
+      </div>
+      
+      <div class="step">
+        <h3>Hold for 7 Counts</h3>
+        <p>Hold your breath for 7 counts. This is where the magic happens — it allows oxygen to saturate your bloodstream.</p>
+      </div>
+      
+      <div class="step">
+        <h3>Exhale for 8 Counts</h3>
+        <p>Exhale completely through your mouth, making a "whoosh" sound, for 8 counts. This long exhale is what triggers relaxation.</p>
+      </div>
+      
+      <div class="step">
+        <h3>Repeat 4 Cycles</h3>
+        <p>That's one breath. Now repeat the cycle 3 more times for a total of 4 breaths. Don't do more than 4 cycles at first.</p>
+      </div>
+    </div>
+    
+    <div class="tip-box">
+      <h4>💡 Key Points</h4>
+      <ul>
+        <li><strong>Speed doesn't matter</strong> — the 4:7:8 ratio matters. Count at whatever speed feels natural.</li>
+        <li><strong>Start with 4 cycles max</strong> — you can increase to 8 cycles after a month of practice</li>
+        <li><strong>Feeling lightheaded?</strong> Normal at first. It will pass with practice.</li>
+        <li><strong>Practice twice daily</strong> for cumulative effects</li>
+        <li><strong>For sleep:</strong> Do it lying in bed, right before sleep</li>
+      </ul>
+    </div>
+    
+    <div class="content-card">
+      <h2>4-7-8 vs Box Breathing</h2>
+      <table class="comparison-table">
+        <tr>
+          <th>Aspect</th>
+          <th>4-7-8</th>
+          <th>Box Breathing</th>
+        </tr>
+        <tr>
+          <td>Pattern</td>
+          <td>4 in, 7 hold, 8 out</td>
+          <td>4 in, 4 hold, 4 out, 4 hold</td>
+        </tr>
+        <tr>
+          <td>Best for</td>
+          <td>Sleep, severe anxiety</td>
+          <td>Stress, focus, quick calm</td>
+        </tr>
+        <tr>
+          <td>Intensity</td>
+          <td>Deeper relaxation</td>
+          <td>Moderate calming</td>
+        </tr>
+        <tr>
+          <td>Repetitions</td>
+          <td>4 cycles (to start)</td>
+          <td>As many as needed</td>
+        </tr>
+      </table>
+      <p><strong>Use 4-7-8</strong> when you need deep relaxation or can't sleep. <strong>Use <a href="/breathing/box-breathing/">box breathing</a></strong> for everyday stress and maintaining focus.</p>
+    </div>
+    
+    <div class="content-card">
+      <h2>When to Use 4-7-8</h2>
+      <ul>
+        <li>When you can't fall asleep</li>
+        <li>Waking up with anxiety in the middle of the night</li>
+        <li>Before a stressful event</li>
+        <li>When anxiety feels overwhelming</li>
+        <li>To reduce cravings</li>
+        <li>To manage anger before responding</li>
+      </ul>
+    </div>
+  </main>
+  
+  <footer>
+    <p>© 2026 Grounded Calm. Made with 💚</p>
+    <p><small>Not a substitute for professional mental health care.</small></p>
+  </footer>
+</body>
+</html>
